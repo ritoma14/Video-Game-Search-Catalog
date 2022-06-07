@@ -1,5 +1,5 @@
 # Video Game Search Catalog
-
+![Screen Shot 2022-06-06 at 11 08 04 PM](https://user-images.githubusercontent.com/59907246/172287430-10c740e5-73e0-4fdc-a210-a175c4475c96.png)
 
 ## Requirements
 - Javascript
@@ -8,6 +8,7 @@
 - PostgreSQL
 - Socket.io
 - Python3
+- CSS/HTML/Bootstrap
 
 
 
