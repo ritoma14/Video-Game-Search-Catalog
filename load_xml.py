@@ -39,7 +39,7 @@ class loadDatabase:
 
 
 if __name__ == "__main__":
-    connect_str = "dbname='video_catalog' user='ramy' host='localhost' password='D4t4b4s3'";
+    connect_str = "dbname='video_catalog' user='ramy' host='localhost' password=''";
     xmlFile = "./all_games.xml";
     dbLoader = loadDatabase(connect_str);
     dbLoader.load(xmlFile);
