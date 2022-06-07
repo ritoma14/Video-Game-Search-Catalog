@@ -1,5 +1,6 @@
 # Video Game Search Catalog
 ![Screen Shot 2022-06-06 at 11 08 04 PM](https://user-images.githubusercontent.com/59907246/172287430-10c740e5-73e0-4fdc-a210-a175c4475c96.png)
+![Screen Shot 2022-06-06 at 11 10 25 PM](https://user-images.githubusercontent.com/59907246/172287677-6e5e0394-9fb2-4f7a-b76f-e9344ee1ba9c.png)
 
 ## Requirements
 - Javascript
