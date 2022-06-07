@@ -11,13 +11,6 @@ var path = require('path');
 var str_connec = "postgres://ramy:D4t4b4s3@localhost:5432/video_catalog";
 var video_db = psql(str_connec);
 
-/*const cors = require ("cors")
-
-app.use(cors({
-//origin: "http://127.0.0.1:5432",}))
-origin: "*",}))
-*/
-
 app.use(express.static(__dirname)); 
 server.listen(8081);
 
