@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title> Game Search </title>
+      
+        <meta charset="UTF-8">
+        <link rel="stylesheet shortcut icon" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <style>
+
+    body { 
+        background-color: SandyBrown;
+        
+       
+         }
+   
+
+
+    .btn-primary, .btn-primary:hover, .btn-primary:active{
+        background-color: red;}
+
+    .page-header{
+        color:black;
+        padding: 30px; 
+        text-align: center;
+        border-radius: 10px;
+        font: bold;
+        background-image: url('/games.png');
+        opacity: 0.7;
+        padding-bottom: 30px;
+        }
+    
+
+    </style>
+
+    <body>
+		<div class="container">
+
+            
+        <div class="page-header">                    
+  			<h2 style="font-family: Lucia Handrwriting; border-radius: 35px; ; background-color:SandyBrown; "> Search Any Game</h2>
+            
+         </div>   
+  			<form>
+				<div class="row">
+					<div class="form-group col-lg-3">
+						<label for="cd-name">Game Title</label>
+						<input type="text" class="form-control" style="font-weight:bold" id="cd-name">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-lg-3">
+						<label for="platform-name">Platform</label>
+						<input type="text" class="form-control" style="font-weight:bold" id="platform-name">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-lg-3">
+						<label for="user-review">User Review</label>
+						<input type="number" class="form-control" style="font-weight:bold" id="user-review">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-lg-3">
+						<label for="meta-score">Meta Score</label>
+						<input type="number" class="form-control" style="font-weight:bold" id="meta-score">
+					</div>
+				</div>
+				<button type="button" class="btn btn-primary" onclick="send()">Search</button>
+			</form>
+		</div>
+		<div class="container">
+			<div id="results">
+				<table id="table1" style="font-weight:bold; font-size:40" class="table table-hover">
+                	<thead class="center">
+						<tr>
+							<th>Name</th>
+							<th>Platform</th>
+							<th>Release Date (DD-M-YY)</th>
+							<th>Meta Score</th>
+							<th>User Review</th>
+							
+						</tr>
+					</thead>
+					<tbody id="tbody">
+                   
+					</tbody>
+                   
+				</table>
+
+				
+			</div>
+		</div>
+	</body>
+</html>
